@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en" class="no-js"> 
+
+    <head>
+        <meta charset="utf-8">
+        
+		<!-- TemplateBeginEditable name="doctitle" -->
+        <title>Pummelo | Pomelo - Pumelo)</title>
+        
+        <meta name="description" content="The pummelo is the largest citrus fruit, with an essentially milder, gentler,  sweeter taste than the grapefruit">        
+        <!-- TemplateEndEditable -->
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" type="text/css" href="../css/my-styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+        
+        <script src="../header-scripts/modernizr-development.js"></script>
+        <!-- Pulls in Javascript support from Google -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        <script src="../header-scripts/myscripts.js"></script>
+        
+        <!-- Adds HTML5 element support for earlier versions of IE 9 and below -->
+        <!--[if lt IE 9]><script src"http://html5shim.googlecode.com/svn/trunk/html5.js">
+        </script><[end if]-->
+        
+        <!-- Start Head Editable Region for Single Page Custom Edits -->
+        <!-- TemplateBeginEditable name="headEditableRegion" -->
+                
+        <!-- TemplateEndEditable -->
+        <!-- End Head Editable Region for Single Page Custom Edits -->
+    </head>
+    
+    <!-- Start Body -->
+    <body>
+    <span id="totop"></span>
+   
+        <!-- Start Page -->
+        <div id="page">
+
+            <!-- Start Header -->
+            <header itemscope itemtype="http://schema.org/LocalBusiness" id="mainHeader">
+
+                	<!-- Start Logo -->
+                	<div id="logo">
+                    	<a href="../index.html"><img src="../images/Faithful-Fruit-Factory-Logo-04-w135.png" alt="logo" title="logo" width="135" height="152"></a>
+                    </div>
+                    <!-- End Logo -->
+					<!-- Start Header 1 -->                    
+                    <div id="header1">
+                    <!-- TemplateBeginEditable name="mainHeader" -->
+                        <h1><span itemprop="name">Faithful Fruit Factory</span></h1>
+                            <p><span itemprop="description">Forebear of the modern grapefruit</span></p>            
+                    <!-- TemplateEndEditable -->
+                    </div>
+                	<!-- End Header 1 -->
+
+            </header>
+            <!-- End Header -->
+           
+            <!-- Start Nav -->  
+            <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <h3 hidden>Site Navigation</h3>
+                    <ul class="mainNav" id="mainNav">
+                        <!-- Start Site Navigation List -->
+                        <!-- TemplateBeginEditable name="SiteNavigationList" -->
+                        <li itemprop="name" class="active"><a itemprop="url" href="../mainpage.html"><span itemprop="name">Home</span></a></li>
+                        <li itemprop="name"><a itemprop="url" href="../aboutus.html"><span itemprop="name">About Us</span></a></li>
+                        <li itemprop="name"><a itemprop="url" href="../reviews.html"><span itemprop="name">Reviews</span></a></li>
+                        <li itemprop="name"><a itemprop="url" href="../contactus.html"><span itemprop="name">Contact Us</span></a></li>
+                        <!-- TemplateEndEditable -->
+                        <li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
+                        <!-- End Site Navigation List -->
+                    </ul>                
+            </nav> 
+            <!-- End Nav -->
+            
+            <!-- TemplateBeginEditable name="main" -->
+            <main>
+            
+                <!-- Start Article -->
+                <article>
+                
+                    <h2>Pummelo fruit</h2>
+                        <p></p>
+                        
+                        <!-- Start Section -->
+                        <section>
+                            <h3>Pummelo Varieties</h3>
+                                <p></p>
+                                
+                                <h4>Chandler</h4>
+                                <h4>Liang-Ping-Yau</h4>
+                                <h4>Pink Pummelo</h4>
+                                <h4>Hirado Buntan</h4>
+                                <h4>Pandan Wangi</h4>
+                                <h4>Red Shaddock</h4>                    
+                        </section>
+                        <!-- End Section -->
+                </article>
+                <!-- End Article -->
+                
+                <!-- Start Article -->
+                <article>
+                    <h2>Nutritional Value of Pomelos</h2>
+                        <p></p>
+                
+                <!-- Start Section -->
+                <section>
+                    <h3>Vitamins</h3>
+                    <h3>Minerals</h3>
+                    <h3>organic compounds</h3>
+                    <h3>vitamin C</h3>
+                    <h3>potassium</h3>
+                    <h3>dietary fiber</h3>
+                    <h3>vitamin B6</h3>
+                    <h3>magnesium</h3>                
+                </section>
+                <!-- End Section -->
+                </article>
+                <!-- End Article -->
+                
+                <!-- Start Section -->
+                <section>
+                    <h2>Health Benefits of Pomelos</h2>
+                        <h3>Immune System:</h3>
+                        <h3>Digestion:</h3>
+                        <h3>Blood Pressure:</h3>
+                        <h3>Body Cramping: </h3>
+                        <h3>Bone Health:</h3>
+                        <h3>Anti-Aging: </h3>
+                        <h3>Weight Loss:</h3>
+                </section> 
+                <!-- End Section -->
+            </main>
+            <!-- End Main -->
+    
+                
+            <!-- Start Section -->
+            <section>
+                <h2>Recipes</h2>
+                    <h3>Pomelo:</h3>
+            </section> 
+            <!-- End Section -->        
+            
+            <!-- Aside Section -->
+            <aside>
+                <h4>Faithful Fruit Factory</h4>
+                    <p>The Faithful Fruit Factory is located in California and Florida.</p>
+            </aside>
+            <!-- End Aside Section -->
+            
+            <!-- Start Section -->
+            <section>
+                <h2>Pomelo Fruit Info</h2>
+                    <!-- Start Figure Section -->
+                    <figure>
+                    <img src="../img_pulpit.jpg" alt="The Pomelo Fruit" width="304" height="228">
+                    <figcaption>Fruity. - A view of the pomelo fruit info.</figcaption>
+                    </figure> 
+                    <!-- End Figure Section -->
+                    
+                    <!-- Start Cite Section -->
+                    <p><cite>The Pomela Facts</cite> by Madelon Boschict. Created in 1975.</p> 
+                    <!-- Nd Cite Section -->
+                    
+                    <!-- Start Address Section -->
+                    <address>
+                    Written by <a href="mailto:lwhite@fffactory.com">Lee White</a>.<br>
+                    Visit us at:<br>
+                    faithfulfruitfactory.com<br>
+                    Box 54900, FaithfulFruitland<br>
+                    USA
+                    </address> 
+                    <!-- End Address Section -->
+                    
+                    <!-- Start Small Section -->
+                    <p>faithfulfruitfactory.com - the world's best fruit factory development site.</p>
+                    <p><small>Copyright 2016-3016 by Copyrightland Stock</small></p> 
+                    <!-- End Small Section -->
+                    
+                    <!-- Start Mark Section -->
+                    <p>Do not forget to buy <mark>pomelo</mark> today.</p> 
+                    <!-- End Mark Section -->
+            </section> 
+            <!-- End Section -->            
+            <!-- TemplateEndEditable -->
+            
+            <!-- Start Footer Section -->
+            <footer itemscope itemtype="http://schema.org/CreativeWork" id="page-footer">
+                <p class="to-top"><a href="#totop">back to top</a></p>
+
+                <!-- Start Footer Right Column -->
+                <div class="right-col">
+                	<p><small>All content &copy;<span itemprop="copyrightYear">2016</span> <span itemprop="URL">faithfulfruitfactory.com</span> Inc.</small></p>
+                </div>
+                <!-- End Footer Right Column -->
+
+                <!-- Start Footer Left Column -->
+                <div class="left-col">
+                    <p>CEO: Lee White</p>
+                    <p><span itemprop="name">Faithful Fruit Factory</span></p>
+                </div>
+                <!-- End Footer Left Column -->
+            </footer> 
+            <!-- End Footer Section -->
+        
+        </div>
+        <!-- End Page -->
+        
+        <!-- Start Bottom of Page Scripts -->
+        <script src="footer-scripts/myft-scripts.js"></script>
+        <!-- TemplateBeginEditable name="BottomofPageScripts" -->
+        
+        <!-- TemplateEndEditable -->
+        <!-- End Bottom of Page Scripts -->
+        
+    </body>
+</html>
