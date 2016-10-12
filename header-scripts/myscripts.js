@@ -30,12 +30,13 @@ if (Modernizr.boxshadow) {
   // not-supported
 }	
 */
+/*
   if (Modernizr.inputtypes.date) {
     alert("This browser supports HTML5 date!");
   } else {
     alert("no date :(");
   }
-
+*/
 /*
 Modernizr.load({
   test: Modernizr.inputtypes.date,
