@@ -12,6 +12,7 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
+        <!-- CSS - extra external styles -->
         <link rel="stylesheet" type="text/css" href="css/my-styles.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
@@ -26,15 +27,15 @@
 		</script>
 
 		<!-- Needed for Validation --> 
-		<script type="text/javascript" src="header-scripts/html5forms.js" data-webforms2-support="autofocus" data-webforms2-force-js-validation="true">
-		</script>
+		<script type="text/javascript" src="header-scripts/html5forms.js" data-webforms2-support="autofocus" data-webforms2-force-js-validation="true"></script>
         
         <!-- Adds HTML5 element support for earlier versions of IE 9 and below -->
-        <!--[if lt IE 9]><script src"http://html5shim.googlecode.com/svn/trunk/html5.js">
-        </script><[end if]-->
+        <!--[if lt IE 9]><script src"http://html5shim.googlecode.com/svn/trunk/html5.js"></script><[end if]-->
 
-        <script type="text/livescript" src="header-scripts/modernizr-lpdownlod.js">
-        </script>
+        <!-- A fast & lightweight polyfill to min/max-width CSS3 Media Queries - for IE 6-8, and more -->
+        <!--[if lt IE 9]><script src="../header-scripts/respond.min.js"></script><[end if]-->
+
+        <script type="text/livescript" src="header-scripts/modernizr-lpdownlod.js"></script>
         
         <!-- Start Head Editable Region for Single Page Custom Edits -->
         <!-- InstanceBeginEditable name="headEditableRegion" -->
@@ -73,6 +74,7 @@
             <!-- Start Nav -->  
             <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
                 <h3 hidden>Site Navigation</h3>
+                <input type="checkbox" id="nav" /><label for="nav"></label>
                     <ul class="mainNav" id="mainNav">
                         <!-- Start Site Navigation List -->
                         <!-- InstanceBeginEditable name="SiteNavigationList" -->
@@ -86,8 +88,9 @@
                     </ul>                
             </nav> 
             <!-- End Nav -->
-            
-            <!-- InstanceBeginEditable name="main" -->
+ 
+  
+              <!-- InstanceBeginEditable name="main" -->
 		<!-- Start Main -->
         <main class="main-article">
 

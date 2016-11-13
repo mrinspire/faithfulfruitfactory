@@ -1,5 +1,8 @@
 /* CSS Document */
 
+* {
+	box-sizing:border-box;
+}
 
 /* Start Body */
 body {
@@ -31,7 +34,7 @@ p, li, ol, address, figcaption, a {
 /* Start Page */
 #page {
 	font: 100% Georgia, "Times New Roman", Times, serif;
-    max-width: 1100px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 50px;
     text-align: left;
@@ -59,8 +62,7 @@ header {
     perspective: 500px;
 	overflow:hidden;
 }
-#mainHeader {
-}	
+
 div #logo {
 	float:left;
     -webkit-transition: all 3s cubic-bezier(0.950, 0.050, 0.795, 0.035);
@@ -98,7 +100,7 @@ div #header1 {
 #header1 h1 {
     color: #030;
     font-weight: bolder;
-	font-size: 4.2em;
+	font-size: 3.6em;
 	margin:0;
 	text-shadow: 3px 4px 6px #999;
 }
@@ -122,46 +124,57 @@ div #header1 {
 
 
 /* Start Nav */  
+
+
+
+nav [type="checkbox"], nav label {
+	display:none;
+}
+label {
+	visibility: visible;
+}
+/*nav styles*/
 nav {
 	float:left;
 	clear:both;
 	width:100%;
 	height:auto;
-	overflow:hidden;
 }
 nav h3 {
+	display:none;
 }
-
-nav ul {
+#mainNav {
+	overflow: hidden;
+	margin-bottom: 0;
+	background-color:#333;
+	}
+#mainNav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+	overflow:hidden;
     background-color: #333;
-} 
-
-nav ul li {
+}
+#mainNav li {
     float: left;
-}
-nav ul li {
     border-right: 1px solid #bbb;
-}
-
-nav ul li:last-child {
-    border-right: none;
-}
-nav ul li a {
+	}
+#mainNav a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1em 1em;
     text-decoration: none;
-}
-nav ul li a:hover {
+	}
+#mainNav a:hover {
     background-color: #0C3;
 }
+#mainNav a.current {
+    background-color: #6a7563;
+	cursor: default; 
+	}
 /* Remove margins and padding from the list, and add a black background color */
-ul.mainNav {
+#mainNav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -170,10 +183,10 @@ ul.mainNav {
 }
 
 /* Float the list items side by side */
-ul.mainNav li {float: left;}
+#mainNav li {float: left;}
 
 /* Style the links inside the list items */
-ul.mainNav li a {
+#mainNav li a {
     display: inline-block;
     color: #f2f2f2;
     text-align: center;
@@ -192,26 +205,27 @@ ul.mainNav li a {
     font-size: 17px;
 }
 /* Modernizr Transtions fallback */
-.no-csstransitions ul.mainNav li a {
+.no-csstransitions #mainNav li a {
 	color:#f2f2f2;
 }
-.csstransitions ul.mainNav li a {
+.csstransitions #mainNav li a {
   color: #f2f2f2;
 }
 /* Change background color of links on hover */
-ul.mainNav li a:hover {background-color: #098b2a;}
+#mainNav li a:hover {background-color: #098b2a;}
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
-ul.mainNav li.icon {display: none;}
+#mainNav li.icon {display: none;}
 
-ul.mainNav li.active {
+#mainNav li.active {
     background-color: #6a7563;/*#005600;/*#4CAF50;*/
 }
-ul.mainNav li.active a:hover {
+#mainNav li.active a:hover {
     background-color: #6a7563;/*#005600;/*#4CAF50;*/
 	color:#FFF;
 	cursor:default;
 }
+
 
 /* End Nav */          
 
@@ -221,7 +235,7 @@ main {
 }
 main.main-article {
 	float: left;
-	width: 61%;
+	width: 66%;
 	border: 1px solid #7f7f7f;
 	padding: 0 10px 0 10px;
 	margin-bottom: 2em;
@@ -243,6 +257,7 @@ main.main-article img {
 .boxshadow main.main-article img {
   box-shadow:5px 5px #999;
 }
+
 .imgPic img {
 	margin: 20px;
 	-webkit-transition: all .5s ease;	
@@ -275,17 +290,17 @@ main.main-article video {
 	max-width:100%;
 	height:auto;
 	border: 10px solid #B3BEAC;
-	-moz-box-shadow: 3px 3px 5px #000;
-	-webkit-box-shadow: 3px 3px 5px #000;
-	box-shadow: 3px 3px 5px #000;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 /* Modernizr Box shadow fallback */
 .no-boxshadow main.main-article video {
-	border-right:5px solid #999;
-	border-bottom:5px solid #999;
+	border-right: none;
+	border-bottom: none;
 }
 .boxshadow main.main-article video {
-  box-shadow:5px 5px #999;
+  box-shadow: none;
 }
 div.video {
 	float:none;
@@ -504,6 +519,23 @@ div.audio {
 	text-align:center;
 	margin:10px auto;
 }
+section.article-section .audio audio {
+	max-width:100%;
+	height:auto;
+	border: 10px solid #B3BEAC;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+/* Modernizr Box shadow fallback */
+.no-boxshadow section.article-section .audio audio  {
+	border-right: none;
+	border-bottom: none;
+}
+.boxshadow section.article-section .audio audio  {
+  box-shadow: none;
+}
+
 footer span.author {
 	font-style:normal;
 }
@@ -714,19 +746,58 @@ div.form-submit-reset {
 /* End Fan Form */
 
 
+/* Start Canvas styles */
+.canvasCon {
+	float: none;
+	clear: both;
+	margin: 0 auto;
+	max-width: 100%;
+}
+.canvasCon img#apple {
+	max-width: 10%;
+	border:none;
+	box-shadow:none;
+}
+#canvas1 {
+	margin: 0 auto;
+	max-width: 100%;
+}
+#myCanvasRoundCorns {
+	margin: 0 auto;
+	max-width: 100%;
+}
+#myCanvasImg01 {
+	margin: 0 auto;
+	max-width: 100%;
+	height:auto;
+}
+#myCanvasTrans01 {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+
+/* End Canvas styles */
+
+/* destop styles */
+@media only screen and (min-width: 941px){
+
+}
 /* Start Media Queries */
 
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
-@media screen and (max-width:680px) {
+/*
+@media screen and (max-width:481px) {
   ul.mainNav li:not(:first-child) {display: none;}
   ul.mainNav li.icon {
     float: right;
     display: inline-block;
   }
 }
-
+*/
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-@media screen and (max-width:680px) {
+/*
+@media screen and (max-width:481px) {
   ul.mainNav.responsive {position: relative;}
   ul.mainNav.responsive li.icon {
     position: absolute;
@@ -742,81 +813,16 @@ div.form-submit-reset {
     text-align: left;
   }
 }
-@media screen and (max-width:899px) {  
-#page {
-	max-width: 100%;
-    margin: 0 auto;
-    padding: 0 10px;
-    text-align: left;
-    position:  relative;
-    background: white;
-}
-header {
-	float: left;
-	width: 100%;
-	clear:both;
-	height:auto;
-	/*background: url(../images/Faithful-Fruit-Factory-Logo-02-w135.png) no-repeat;*/
-    padding: 20px 0;
-    position: relative;
-    border-bottom: 2px solid #7f7f7f;
-    margin-bottom: 1em;
-	overflow:hidden;
-}  
-div #logo {
-	float:left;
-	max-width: 135px;
-	height:auto;
-}	
-div #logo img {
-	width:80%;
-	height:auto;
-}	
-div #header1 {
-	float:right;
-	text-align:right;
-	padding:0 10px 0 0;
-}	
-#header1 h1 {
-    color: #030;
-    font-weight: bolder;
-	font-size: 3.4em;
-	margin:0;
-	text-shadow: 3px 4px 6px #999;
-}
-#header1 p {
-    color: #030;
-    font-weight: bolder;
-	font-size: 2em;
-	margin:0;
-	text-shadow: 2px 3px 3px #999;
-}
-nav {
-	float:left;
-	clear:both;
-	width:100%;
-	height:auto;
-	overflow:hidden;
-}
-main.main-article {
-	float: left;
-	width: 100%;
-	clear:both;
-	border-right: none;/* 1px solid #7f7f7f;*/
-	padding: 0 0 0 2px;
-	margin-bottom: 2em;
-}
-/* End Main */
+*/
+/* tablet styles */
+@media only screen and (min-width: 481px) and (max-width: 768px){
 
-section.article-section {
-	float: left;
-	clear: both;
-	width: 100%;
-	padding: 0 10px 0 10px;
-	margin-bottom: 0;
+body {
+	width:98%;
+	margin:0 auto;
+	min-width:500px;
+	max-width:768px;
 }
-}
-@media screen and (max-width: 680px) and (min-width: 421px) {
 #page {
 	max-width: 100%;
     margin: 0 auto;
@@ -867,20 +873,98 @@ div #header1 {
 	text-shadow: 2px 3px 3px #999;
 }
 nav {
-	float:left;
-	clear:both;
-	width:100%;
-	height:auto;
-	overflow:hidden;
 }
 main.main-article {
 	float: left;
 	width: 100%;
 	clear:both;
 	border-right: none;/* 1px solid #7f7f7f;*/
-	padding: 0 0 0 2px;
+	padding: 0 0 0 0;
 	margin-bottom: 2em;
 }
+main.main-article article {
+	border-radius: 0 0 0 0;
+	-moz-box-shadow:5px 5px #999;
+	-webkit-box-shadow:5px 5px #999;
+	box-shadow:5px 5px #999;
+    padding: 0 20px 20px;
+    margin: 1.5em 0 0 0;
+    padding: 1em 1em;
+    margin-bottom: 1.5em;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+/* Modernizr Box shadow fallback */
+.no-boxshadow main.main-article article {
+	border-right: none;
+	border-bottom: none;
+}
+.boxshadow main.main-article article {
+  box-shadow: none;
+}
+
+main.main-article img {
+	max-width:100%;
+	height:auto;
+	border: 10px solid #6a7563;
+	-moz-box-shadow: 3px 3px 5px #000;
+	-webkit-box-shadow: 3px 3px 5px #000;
+	box-shadow: 3px 3px 5px #000;
+}
+/* Modernizr Box shadow fallback */
+.no-boxshadow main.main-article img {
+	border-right:5px solid #999;
+	border-bottom:5px solid #999;
+}
+.boxshadow main.main-article img {
+  box-shadow:5px 5px #999;
+}
+.imgPic img {
+	margin: 0 0 20px 0;
+	-webkit-transition: all .5s ease;	
+	-moz-transition: all .5s ease;	
+	-o-transition: all .5s ease;	
+	transition: all .5s ease;
+}
+.imgPic img:hover {
+	border: 10px solid #930;
+	-webkit-transform: scale(1.4);	
+	-moz-transform: scale(1.4);	
+	-ms-transform: scale(1.4);	
+	-o-transform: scale(1.4);	
+	transform: scale(1.4);
+	-moz-box-shadow: 3px 3px 5px #000;
+	-webkit-box-shadow: 3px 3px 5px #000;
+	box-shadow: 3px 3px 5px #000;
+	-webkit-backface-visibility: hidden;
+}
+/* Modernizr Transforms fallback */
+.no-csstransforms .imgPic img:hover {
+	border: 10px solid #0C0;
+	width: 50%;
+	height:auto;
+}
+.csstransforms .imgPic img:hover {
+	border: 10px solid #930;
+}
+main.main-article video {
+	max-width:100%;
+	height:auto;
+	border: 10px solid #B3BEAC;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+/* Modernizr Box shadow fallback */
+.no-boxshadow main.main-article video {
+	border-right: none;
+	border-bottom: none;
+}
+.boxshadow main.main-article video {
+  box-shadow: none;
+}
+
 /* End Main */
 
 section.article-section {
@@ -890,8 +974,36 @@ section.article-section {
 	padding: 0 10px 0 10px;
 	margin-bottom: 0;
 }
+section.article-section .audio audio {
+	max-width:100%;
+	height:auto;
+	border: 10px solid #B3BEAC;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
-@media screen and (max-width: 420px) and (min-width: 321px) {
+/* Modernizr Box shadow fallback */
+.no-boxshadow section.article-section .audio audio  {
+	border-right: none;
+	border-bottom: none;
+}
+.boxshadow section.article-section .audio audio  {
+  box-shadow: none;
+}
+}
+
+/* mobile styles */
+@media only screen and (max-width: 480px){
+body {
+	width:100%;
+	margin:0 auto;
+	min-width:320px;
+	max-width:480px;
+    padding: 0 10px;
+    text-align: left;
+    position:  relative;
+    background: white;
+}
 #page {
 	max-width: 100%;
     margin: 0 auto;
@@ -914,82 +1026,6 @@ header {
 }  
 div #logo {
 	float:left;
-	max-width: 135px;
-	height:auto;
-	display:none;
-}	
-div #logo img {
-	width:80%;
-	height:auto;
-}	
-div #header1 {
-	float:none;
-	text-align:center;
-	padding:0 10px 0 0;
-}	
-#header1 h1 {
-    color: #030;
-    font-weight: bolder;
-	font-size: 2em;
-	margin:0;
-	text-shadow: 3px 4px 6px #999;
-}
-#header1 p {
-    color: #030;
-    font-weight: bolder;
-	font-size: 1em;
-	margin:0;
-	text-shadow: 2px 3px 3px #999;
-}
-nav {
-	float:left;
-	clear:both;
-	width:100%;
-	height:auto;
-	overflow:hidden;
-}
-main.main-article {
-	float: left;
-	width: 100%;
-	clear:both;
-	border-right: none;/* 1px solid #7f7f7f;*/
-	padding: 0 0 0 2px;
-	margin-bottom: 2em;
-}
-/* End Main */
-
-section.article-section {
-	float: left;
-	clear: both;
-	width: 100%;
-	padding: 0 10px 0 10px;
-	margin-bottom: 0;
-}
-}
-@media screen and (max-width:320px) {  
-
-#page {
-	min-width: 320px;
-    margin: 0 auto;
-    padding: 0 10px;
-    text-align: left;
-    position:  relative;
-    background: white;
-}
-header {
-	float: left;
-	width: 100%;
-	clear:both;
-	height:auto;
-	/*background: url(../images/Faithful-Fruit-Factory-Logo-02-w135.png) no-repeat;*/
-    padding: 20px 0;
-    position: relative;
-    border-bottom: 2px solid #7f7f7f;
-    margin-bottom: 1em;
-	overflow:hidden;
-}  
-div #logo {
-	float:left;
 	display:none;
 }	
 div #header1 {
@@ -1012,21 +1048,158 @@ div #header1 {
 	text-align:center;
 }
 
-nav {
-	float:left;
-	clear:both;
-	width:100%;
-	height:auto;
-	overflow:hidden;
+/* End Header */          
+
+
+/* Start Nav */  
+	nav ul {
+		  display: none;
+	}
+
+	nav label {
+  		display: block;
+  		background: #6a7563;
+		  width: 50px;
+  		height: 40px;
+  		cursor: pointer;
+	}
+  
+nav label:after{
+  content:'Menu';
+  display: block;
+  padding:10px 0 0 0;
+  text-align:center;
 }
+/* Create horizontal lines with box shadow, but will need fallbacks for older browsers */
+/*
+nav label:after{
+  content:'';
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: #333;
+  margin: 7px 5px;
+  box-shadow: 0px 10px 0px #333, 0px 20px 0px #333, 0px 30px 0px #333;
+}
+*/
+
+nav [type="checkbox"], nav label {
+}
+	nav [type="checkbox"]:checked ~ ul {
+  		display: block;
+  		z-index: 9999;
+  		position: absolute;
+		  right: 20px;
+		  left: 20px;
+	}
+
+	nav ul li {
+		  display: block;
+  		float: none;
+  		width: 100%;
+  		text-align: left;
+  		background: #222;
+		  text-indent: 0px;
+	}
+#mainNav li a {
+	width:100%;
+}
+	
+/* End Nav */          
+
+/* Start Main */
+
 main.main-article {
 	float: left;
 	width: 100%;
 	clear:both;
 	border-right: none;/* 1px solid #7f7f7f;*/
-	padding: 0 0 0 2px;
+	padding: 0 0 0 0;
 	margin-bottom: 2em;
 }
+main.main-article article {
+	border-radius: 0 0 0 0;
+	-moz-box-shadow:5px 5px #999;
+	-webkit-box-shadow:5px 5px #999;
+	box-shadow:5px 5px #999;
+    padding: 0 20px 20px;
+    margin: 1.5em 0 0 0;
+    padding: 1em 1em;
+    margin-bottom: 1.5em;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+/* Modernizr Box shadow fallback */
+.no-boxshadow main.main-article article {
+	border-right: none;
+	border-bottom: none;
+}
+.boxshadow main.main-article article {
+  box-shadow: none;
+}
+
+main.main-article img {
+	max-width:100%;
+	height:auto;
+	border: 10px solid #6a7563;
+	-moz-box-shadow: 3px 3px 5px #000;
+	-webkit-box-shadow: 3px 3px 5px #000;
+	box-shadow: 3px 3px 5px #000;
+}
+/* Modernizr Box shadow fallback */
+.no-boxshadow main.main-article img {
+	border-right:5px solid #999;
+	border-bottom:5px solid #999;
+}
+.boxshadow main.main-article img {
+  box-shadow:5px 5px #999;
+}
+.imgPic img {
+	margin: 0 0 20px 0;
+	-webkit-transition: all .5s ease;	
+	-moz-transition: all .5s ease;	
+	-o-transition: all .5s ease;	
+	transition: all .5s ease;
+}
+.imgPic img:hover {
+	border: 10px solid #930;
+	-webkit-transform: scale(1.4);	
+	-moz-transform: scale(1.4);	
+	-ms-transform: scale(1.4);	
+	-o-transform: scale(1.4);	
+	transform: scale(1.4);
+	-moz-box-shadow: 3px 3px 5px #000;
+	-webkit-box-shadow: 3px 3px 5px #000;
+	box-shadow: 3px 3px 5px #000;
+	-webkit-backface-visibility: hidden;
+}
+/* Modernizr Transforms fallback */
+.no-csstransforms .imgPic img:hover {
+	border: 10px solid #0C0;
+	width: 50%;
+	height:auto;
+}
+.csstransforms .imgPic img:hover {
+	border: 10px solid #930;
+}
+main.main-article video {
+	max-width:100%;
+	height:auto;
+	border: 10px solid #B3BEAC;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+/* Modernizr Box shadow fallback */
+.no-boxshadow main.main-article video {
+	border-right: none;
+	border-bottom: none;
+}
+.boxshadow main.main-article video {
+  box-shadow: none;
+}
+
 /* End Main */
 
 section.article-section {
@@ -1035,6 +1208,22 @@ section.article-section {
 	width: 100%;
 	padding: 0 10px 0 10px;
 	margin-bottom: 0;
+}
+section.article-section .audio audio {
+	max-width:100%;
+	height:auto;
+	border: 10px solid #B3BEAC;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+/* Modernizr Box shadow fallback */
+.no-boxshadow section.article-section .audio audio  {
+	border-right: none;
+	border-bottom: none;
+}
+.boxshadow section.article-section .audio audio  {
+  box-shadow: none;
 }
 
 }
